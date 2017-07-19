@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css
+
+
+
+
+
+">
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.2/weui.min.js
+
+
+
+
+
+"></script>
+
+
+</head>
+
+<body>
+    <a onclick="tanchu()" href="javascript:;" class="weui-btn weui-btn_primary">页面主操作 Normal</a>
+
+
+</body>
+<script>
+    function tanchu() {
+        weui.dialog({
+    title: 'dialog标题',
+    content: 'dialog内容',
+    className: 'custom-classname',
+    buttons: [{
+        label: '取消',
+        type: 'default',
+        onClick: function () { alert('取消') }
+    }, {
+        label: '确定',
+        type: 'primary',
+        onClick: function () { alert('确定') }
+    }]
+});
+    }
+
+</script>
+
+
+</html>
